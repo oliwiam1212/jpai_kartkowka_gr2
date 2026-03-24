@@ -1,0 +1,16 @@
+ 1  git clone https://github.com/oliwiam1212/jpai_kartkowka_gr2.git
+    2  cd jpai_kartkowka_gr2
+    3  git status
+    4  nano app.js
+    5  nano package.json
+    6  nano Dockerfile
+    7  docker build -t zaliczenie:v3
+    8  docker build -t zaliczenie:v3 .
+    9  nano Dockerfile
+   10  docker build -t zaliczenie:v3 .
+   11  docker run -d -p 4012:3000 --name kontener zaliczenie:v3
+   12  curl -f http://localhost:4012/
+   13  docker rm -f kontener
+   14  docker ps
+   15  docker rmi zaliczenie:v3
+   16  history | tee docker.log
